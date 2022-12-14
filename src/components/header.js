@@ -20,8 +20,8 @@ const Header = () => {
         <header>
             <nav>
                 <ul>
-                    {links.map(link => (
-                      <li key={link.url}>
+                    {links.map((link, index) => (
+                      <li key={index}>
                         <span>
                           <a
                             href={`${link.url}?utm_source=starter&utm_medium=start-page&utm_campaign=minimal-starter`}

@@ -1,11 +1,12 @@
 import * as React from "react"
-import Header from "../components/header.js"
+import Layout from "../components/Layout.js"
 
 const IndexPage = () => {
     return (
       <div>
-          <Header/>
-          <h1>Heading Text</h1>
+          <Layout>
+          <h1 className="text-3xl font-bold underline">Heading Text</h1>
+          </Layout>
       </div>
   )
 }

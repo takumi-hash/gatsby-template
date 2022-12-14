@@ -1,5 +1,4 @@
 import * as React from "react"
-import { Link } from "gatsby"
 
 const links =   [{
     text: "Tutorial",
@@ -16,27 +15,25 @@ const links =   [{
     color: "#E95800",
   },]
 
-
 const Header = () => {
     return (
         <header>
             <nav>
                 <ul>
                     {links.map(link => (
-                      <li key={link.url} style={{ ...listItemStyles, color: link.color }}>
+                      <li key={link.url}>
                         <span>
                           <a
-                            style={linkStyle}
                             href={`${link.url}?utm_source=starter&utm_medium=start-page&utm_campaign=minimal-starter`}
                           >
                             {link.text}
                           </a>
                           {link.badge && (
-                            <span style={badgeStyle} aria-label="New Badge">
+                            <span aria-label="New Badge">
                               NEW!
                             </span>
                           )}
-                          <p style={descriptionStyle}>{link.description}</p>
+                          <p>{link.description}</p>
                         </span>
                       </li>
                     ))}

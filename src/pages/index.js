@@ -5,11 +5,11 @@ const IndexPage = () => {
     return (
       <div>
           <Header/>
-          <h1>Gatsby Blog Site</h1>
+          <h1>Heading Text</h1>
       </div>
   )
 }
 
 export default IndexPage
 
-export const Head = () => <title>Home Page</title>
+export const Head = () => <title>Page Title</title>
